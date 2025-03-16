@@ -1,0 +1,49 @@
+/* Ajout de styles pour les flèches de navigation du carousel */
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Assurer que les flèches sont au-dessus des images */
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrousel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
